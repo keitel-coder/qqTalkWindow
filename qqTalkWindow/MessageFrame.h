@@ -12,7 +12,7 @@
  *
  *  @return 正文字体
  */
-#define TextFont [UIFont systemFontOfSize:15];
+#define TextFont [UIFont systemFontOfSize:14]
 
 /**
  *  正文的内边距
@@ -43,4 +43,10 @@
  *  消息模型
  */
 @property(strong,nonatomic) MessageModel *message;
+
+/**
+ *  cell的高度
+ */
+@property(assign,nonatomic,readonly)CGFloat cellHeight;
+
 @end

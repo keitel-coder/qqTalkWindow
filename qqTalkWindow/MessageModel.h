@@ -34,6 +34,11 @@ typedef enum{
 @property(assign,nonatomic)MessageModelType type;
 
 /**
+ *  是否隐藏时间
+ */
+@property(assign,nonatomic)BOOL isHiddenTime;
+
+/**
  *  静态方法初始化数据模型
  *
  *  @param dict 传入字典
@@ -50,4 +55,5 @@ typedef enum{
  *  @return 数据模型
  */
 +(instancetype) messageModelWithDict:(NSDictionary*) dict;
+
 @end

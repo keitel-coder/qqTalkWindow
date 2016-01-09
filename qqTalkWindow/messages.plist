@@ -14,7 +14,7 @@
 		<key>text</key>
 		<string>问你个严肃的事</string>
 		<key>time</key>
-		<string>前天 10:28</string>
+		<string>前天 10:27</string>
 		<key>type</key>
 		<integer>0</integer>
 	</dict>
@@ -69,6 +69,20 @@
 	<dict>
 		<key>text</key>
 		<string>你妈B的！！！滚！！！</string>
+		<key>time</key>
+		<string>昨天 20:15</string>
+		<key>type</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>text</key>
+		<string>ableView.backgroundColor = [UIColor greenColor]改变整个tableView的颜色，对于tableViewCell，我们不应该直接使用cell.backgroundColor。Cell本身是一个UIView，我们所看到的部分其实只是它的一个Subview，也就是cell.contentView。所以，如果直接改变cell本身的背景色，依然会被cell.contentView给覆盖，没有效果
+cell.contentView.backgroundColor = [UIColor blueColor];
+Cocoa提供的按钮背景色为透明。因为ContentView被移开，下面是tableView的颜色，已经不是cell的一部分了。
+
+所以，最好的方式应该是通过cell.backgroundView来改变cell的背景。按照文档说明，backgroundView始终处于cell的最下层，所以，将cell里的其它subview背景设为[UIColor clearColor],以cell.backgroundView作为统一的背景，应该是最好的方式。
+
+</string>
 		<key>time</key>
 		<string>昨天 20:15</string>
 		<key>type</key>
